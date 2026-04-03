@@ -1,9 +1,8 @@
 .container {
     overflow: hidden;
+	display: flex;
 }
 	.sidebar{
-		background: #333;
-		color: #fff;
 		height: 500px;
 		border-radius: 4px;
 		margin: 20px;
@@ -15,5 +14,5 @@
 		position: absolute;
 	}
 	.content{
-		width: 630px;
+		flex-grow: 1;
 	}
