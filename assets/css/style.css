@@ -3,28 +3,30 @@
 
 @import "{{ site.theme }}";
 .container {
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  gap: 10px;
 }
 
 .sidebar{
-	width: 300px;
-	float: left;
-	position: absolute;
+	width: 200px;
+
+	.sidebar ul {
+  		list-style: none;
+  		padding: 0;
 	}
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
 
-.sidebar a {
-  display: block;
-  padding: 0.5rem 0;
-  color: #157878;
-  text-decoration: none;
-}
+	.sidebar a {
+  		display: block;
+  		padding: 0.5rem 0;
+  		color: #157878;
+  		text-decoration: none;
+	}
 
-.sidebar a:hover {
-  text-decoration: underline;
+	.sidebar a:hover {
+  		text-decoration: underline;
+	}
 }
 
 .main-content {
