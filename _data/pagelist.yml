@@ -3,6 +3,3 @@ docs:
 
 - title: Home
   url: index.html
-  
-- title: Removing Auth Tokens from URL Query Parameters
-  url: queryparams.html
