@@ -1,4 +1,5 @@
-<!--# Removing Auth Tokens from URL Parameters-->
+# Removing Auth Tokens from URL Parameters
+
 ## High-Level Description
 
 The way that API calls are authenticated is changing on 31 Jan 2022. 
