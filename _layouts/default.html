@@ -38,15 +38,15 @@ layout: default
     <main id="content" class="main-content" role="main">
 
       <div class="container">
+        <div class="primary-content">
+          {{ content }}
+        </div>
         <div class="sidebar">
           <ul>
             {% for item in site.data.pagelist.docs %}
               <li><a href="{{ item.url }}">{{ item.title }}</a></li>
             {% endfor %}
           </ul>
-        </div>
-        <div class="primary-content">
-          {{ content }}
         </div>
     </div>
 
