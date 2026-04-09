@@ -1,4 +1,6 @@
-## Removing Auth Tokens from URL Parameters
+<!--Will a comment fix the issue with headers?-->
+
+## Remove Auth Tokens from URL Parameters
 
 The way that API calls are authenticated is changing on 31 Jan 2022. 
 Placing auth tokens in the URL parameters pose a significant security risk. 
