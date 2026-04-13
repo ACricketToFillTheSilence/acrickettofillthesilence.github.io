@@ -6,3 +6,9 @@ docs:
 
 - title: URL Query Parameters
   url: queryparams.html
+
+- title: Gradient-Boosted Decision Trees in Property Valuations
+  url: pa-ds-ai-avm.md
+
+- title: Customize Supply Allocation for Inventory Management
+  url: supplyallocation.md
