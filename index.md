@@ -3,6 +3,16 @@ My work bridges the gap between technology and developers by collaborating with 
 
 ## Writing samples
 
+### [Supply Allocation in Inventory Management](supplyallocation.html)
+
+In this topic, I explain how to modify an ItemFacility object to configure sources for replenishing inventory. 
+This topic involves JavaScript code snippets for an engineer to modify and use when configuring their application.
+
+### [Gradient-Boosted Decision Trees in the AI AVM](pa-ds-ai-avm.html)
+
+ This topic explains a gradient-boosted decision tree (GBDT) implementation of an Automated Valuation Model (AVM) for property appraisers. 
+ This audience is not technical, which required that I begin with an introduction to AI in general.
+
 ### [Your Clover App Market Rating May Have Changed](https://medium.com/clover-platform-blog/clover-your-clover-app-market-rating-may-have-changed-heres-why-1772d3a0055b)
 
 In this blog, I introduce the concept of Bayesian averages to explain why Clover's app ratings aren't a straight average.
