@@ -1,6 +1,6 @@
 # How the AI Automated Valuation Model Works
 
-C3 AI Property Appraisal generates property valuations using AI Automated Valuation Models (AI AVMs). 
+Property Appraisal generates property valuations using AI Automated Valuation Models (AI AVMs). 
 The AI AVM leverages a machine learning (ML) algorithm known as Gradient-Boosted Decision Trees (GBDTs) to identify non-linear relationships between property characteristics and sale price.
 
 Through successive decision trees, gradient boosting trees fit data much closer than a linear regression model.
@@ -9,18 +9,15 @@ This approach is more robust than other methods of valuing properties for the fo
 * **Review millions of properties**: Machine learning models can quickly compare properties at scale.
 * **Identify subtler influences to property value**: This model includes all property details and uses patterns to determine which details contribute to the total property value. The AVM identifies features that influence the overall price, even if they are unintuitive.
 * **Refine value through successive iterations**: By iterating on each tree to find the weakest parts of the estimate, the model successively refines its valuation to reach the actual value. This process is more efficient and more accurate than traditional methods of estimating the value, such as sales comparisons.
-* **Calculate non-linear relationships between characteristics and sale price**: Linear regressions include fixed coefficients to determine the value of a home. Many variables, such as quality and living area, don't match a linear model. Consider the following chart, which compares sales price to property quality.
-  ![A chart showing the curved relationship between sales price and grade](img/pa-sales-price.png)
+* **Calculate non-linear relationships between characteristics and sale price**: Linear regressions include fixed coefficients to determine the value of a home. Many variables, such as quality and living area, don't match a linear model.
 * **Build correlations between property characteristics**: Linear regressions assume that property characteristics do not impact each other. However, GBDTs can identify connections between characteristics, such as whether the geographic location impacts the value of a pool.
 
 To understand gradient boosting, you must first understand how C3 AI develops enterprise-grade AI models. 
-This topic walks you through how C3 AI uses GBDTs to determine a property valuation.
+This topic walks you through how the application uses GBDTs to determine a property valuation.
 
 ## Intro to AI
 
-Computers don't know much about the world. 
 AI trains computers to perform complex tasks.
-
 To teach computers how to perform these tasks, a data scientist trains a **model**, a process that uses rules to determine outcomes. 
 In this case, the rules are the GBDTs and the outcome is a property valuation.
 
@@ -39,14 +36,14 @@ Before any training or testing, someone must prepare the data.
 This preparation includes the following steps:
 
 1. **Assess quality**: The data must be up-to-date and include all necessary fields. In the case of property appraisal, necessary fields could be sale price, lot size, number of bedrooms, and any other property characteristics.
-1. **Review relationships**: The C3 AI Property Appraisal team might explore the correlations between your data and the result. For example, a data scientist would ask how square footage or location influence a property's sale price.
-1. **Transform data**: The data must be uniform before a model can use it. For example, if one data source refers to the sale price as "sales price" and another refers to it as "sales value," C3 AI Property Appraisal combines both fields into one field with a consistent name.
+1. **Review relationships**: The Property Appraisal team might explore the correlations between your data and the result. For example, a data scientist would ask how square footage or location influence a property's sale price.
+1. **Transform data**: The data must be uniform before a model can use it. For example, if one data source refers to the sale price as "sales price" and another refers to it as "sales value," Property Appraisal combines both fields into one field with a consistent name.
 
 ### Train a model
 
 To teach the model to accurately predict the value of a property, you start with a set of **training data**. 
 Training data is a set of items labeled with the correct outcome. 
-For the C3 AI Property Appraisal AI AVM, the training data is a subset of the prepared data. 
+For the Property Appraisal AI AVM, the training data is a subset of the prepared data. 
 
 During training, the model establishes a relationship between the sale price and the following:
 
@@ -80,13 +77,13 @@ The model analyzes all the houses in the training data to decide which features 
 > [!IMPORTANT]
 > Although the model uses sale price as the label, sale price is *not* the final output of this model.
 > The model uses sale price as a baseline for determining fair market value for any given property.
-> Sale price fluctuations over time can cause the fair market value to shift—especially if the property was last sold a long time ago.
+> Sale price fluctuations over time can cause the fair market value to shift—especially if the property last sold over a decade ago.
 > This is why it's important to use up-to-date sale prices when training the AI AVM.
 
 ### Test the model
 
-After training, C3 AI data scientists submit **test data** to evaluate the accuracy of the model's predictions. 
-In this case,  data scientists compare property valuation predictions with the actual sales prices to determine whether the predictions fall within an acceptable margin of error.
+After training, data scientists submit **test data** to evaluate the accuracy of the model's predictions. 
+In this case, data scientists compare property valuation predictions with the actual sales prices to determine whether the predictions fall within an acceptable margin of error.
 
 If the model can correctly estimate the value of the test properties within a small margin of error, the model is considered **trained**, or ready to deploy.
 
