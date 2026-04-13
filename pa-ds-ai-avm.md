@@ -1,5 +1,3 @@
-# How the AI Automated Valuation Model Works
-
 Property Appraisal generates property valuations using AI Automated Valuation Models (AI AVMs). 
 The AI AVM leverages a machine learning (ML) algorithm known as Gradient-Boosted Decision Trees (GBDTs) to identify non-linear relationships between property characteristics and sale price.
 
